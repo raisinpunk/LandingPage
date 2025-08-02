@@ -6,12 +6,30 @@
   font-family: 'Roboto';
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+img {
+  border-radius: 15px;
+}
+
 .first-section {
   background-color: #1f2937;
+  padding-top: 20px
 }
 
 .navbar {
   display: flex;
+  justify-content: space-around;
+  margin: 0px 0x 0px 25px;
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
 }
 
 #header-logo {
@@ -22,6 +40,27 @@
 .header-link {
   font-size: 18px;
   color: #E5E7EB;
+  padding-bottom: 10px;
+}
+
+.signup {
+  display: flex;
+  flex-direction: row;
+  margin-top: 180px;
+  margin-bottom: 180px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.leftbox,.rightbox {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  width: 50%;
+  min-width: 400px;
+  max-width: 400px;
 }
 
 ul {
@@ -29,9 +68,36 @@ ul {
   flex-direction: row;
 }
 
-.logo,.links {
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+.links {
   display: flex;
   width: 50%;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
+}
+
+.signup1 {
+  background-color: #3882f6; /* A common shade of blue */
+  color: white; /* Text color */
+  padding: 12px 24px; /* Adjust padding for desired size */
+  border: none; /* Remove default button border */
+  border-radius: 10px; /* Adjust for desired roundness (e.g., 50% for perfectly round if height/width are equal) */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold;
+  cursor: pointer; /* Indicate it's clickable */
+  text-decoration: none; /* Remove underline if using an anchor tag */
+  display: inline-block; /* Allows padding and other box model properties to work correctly */
+  text-align: center;
+  width: 150px;
+  height: 40px;
+}
+
+.rightbox {
+  align-items: right;
+  justify-content: right;
 }
